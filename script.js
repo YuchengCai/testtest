@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function(){
             Stage = stage - 1;
             clickCountsTextarea.value += `\n阶段 ${Stage} 点击次数汇总：\n`;
             for (var index in clickCounter){
-                clickCountsTextarea.value += '\n按钮 ' + (index + 1) + ': ' + clickCounter[index] + ' 次\n';
+                clickCountsTextarea.value += '\n按钮 ' + (index) + ': ' + clickCounter[index] + ' 次\n';
             }
             
             clickCountsTextarea.scrollTop = clickCountsTextarea.scrollHeight; // 滚动到文本框底部
