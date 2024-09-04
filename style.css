@@ -1,0 +1,42 @@
+body, html {
+    height: 100%; /* 使body和html占满整个视口高度 */
+    margin: 0; /* 移除默认的外边距 */
+    font-family: Arial, sans-serif; /* 设置默认字体 */
+}
+
+.container {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: space-around; /* 使子元素在主轴上均匀分布 */
+    align-items: center; /* 使子元素在交叉轴上居中对齐 */
+    height: 100%; /* 使容器占满整个视口高度 */
+}
+
+.button-container {
+    display: grid; /* 使用网格布局来排列按钮 */
+    grid-template-columns: repeat(3, 1fr); /* 创建3列，每列等宽 */
+    gap: 10px; /* 设置网格项之间的间隔 */
+    padding: 20px; /* 外边距 */
+}
+
+button {
+    padding: 10px 20px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标悬停时显示指针手势 */
+    border: 1px solid #ddd; /* 边框 */
+    outline: none; /* 点击时不显示轮廓 */
+}
+
+.text-display {
+    flex-grow: 1; /* 使文本显示框容器在交叉轴上占据剩余空间 */
+    padding: 20px; /* 内边距 */
+}
+
+#clickCountsTextarea {
+    width: 400px; /* 文本框宽度占满容器宽度 */
+    height: 200px; /* 设置文本框高度 */
+    background: #ffffff; /* 背景色 */
+    border: 1px solid #ddd; /* 边框 */
+    padding: 10px; /* 内边距 */
+    font-size: 14px; /* 字体大小 */
+    resize: none; /* 禁止调整大小 */
+}
